@@ -11,3 +11,16 @@
     color: $text-color;
     font-size: 1rem;
 }
+
+@media ( max-width: 950px ){
+   .footer{
+    display: block;
+   
+   }
+
+   h2{
+    margin: 10px;
+   }
+  
+    
+}
