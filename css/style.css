@@ -1,0 +1,152 @@
+.topheader {
+  box-shadow: 0 4px 5px #676767;
+  position: fixed;
+  background-color: #30444f;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* logo */
+.nameNav {
+  color: #ebecee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #5b8291;
+  text-decoration: none;
+}
+
+/* menu */
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.menu a {
+  color: #ebecee;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  background-color: #98dad8;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+  opacity: 0.8;
+}
+
+.menu a:hover {
+  color: #5b8291;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+.footer {
+  background-color: #5b8291;
+  text-align: center;
+  padding: 50px;
+  width: 100%;
+}
+
+.footer-title a {
+  color: #ebecee;
+}
+
+@media (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #161616;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .menu li {
+    padding: 0;
+  }
+  .menu a {
+    color: #ebecee;
+    line-height: 60px;
+    font-size: 20px;
+  }
+  .open-menu, .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .close-menu {
+    align-self: flex-end;
+    padding: 20px 15px;
+  }
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+* {
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
