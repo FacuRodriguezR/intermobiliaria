@@ -1,10 +1,12 @@
 @import 'nav';
 @import 'variables';
+@import 'main';
+@import 'footer';
 
 *{  
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
-    font-family: 'poppins', sans-serif;
+    font-family:  'roboto',sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,4 +18,8 @@
     max-width: 1068px;
     margin: auto;
     width: 100%;
+}
+
+body {
+    background-color: $navbar-shallow-color;
 }
