@@ -25,4 +25,12 @@
 body {
     background-color: $navbar-shallow-color;
     max-width: 100%;
+    
 }
+
+@media (max-width:950px){
+    body{
+        overflow-x: hidden;
+    }
+}
+

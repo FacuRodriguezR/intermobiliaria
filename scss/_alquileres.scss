@@ -1,5 +1,10 @@
 @import 'variables';
 
+.alquileres{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .alquileres-main {
     background: $theme-color;
@@ -17,7 +22,10 @@
 
 .wave-up{
     margin: -5px;
+    max-width: 100%;
 }
+
+
 
 .alquileres-title {
     font-size: 30px;
@@ -34,12 +42,26 @@
        padding: 30px;
     }
 
-    .alquileres-title {
-        font-size: 25px;
-        text-align: center;
-        letter-spacing: 1px;
+    .wave{
+        max-width: 99%;
+       
+    
+    }
+    
+    .wave-up{
+       
+        max-width: 99%;
     }
 
    
     
+}
+
+@media (max-width:950px){
+    .alquileres-title {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: normal;
+    }
+
 }

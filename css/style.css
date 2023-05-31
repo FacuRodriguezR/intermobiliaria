@@ -313,6 +313,17 @@
   font-weight: 300;
 }
 
+@media (max-width: 950px) {
+  .contact-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    text-align: center;
+  }
+  .title-contact {
+    font-size: 25px;
+  }
+}
 @media (min-width: 950px) {
   .contact {
     font-size: 20px;
@@ -320,11 +331,6 @@
     max-width: 980px;
     margin: 0 auto;
     box-sizing: border-box;
-  }
-  .contact-title {
-    font-size: 35px;
-    font-weight: 400;
-    text-align: left;
   }
   .social-list {
     justify-content: flex-start;
@@ -349,6 +355,11 @@
     align-items: center;
   }
 }
+.alquileres {
+  display: flex;
+  flex-direction: column;
+}
+
 .alquileres-main {
   background: #30444f;
   color: #ebecee;
@@ -363,6 +374,7 @@
 
 .wave-up {
   margin: -5px;
+  max-width: 100%;
 }
 
 .alquileres-title {
@@ -378,10 +390,18 @@
     text-align: center;
     padding: 30px;
   }
+  .wave {
+    max-width: 99%;
+  }
+  .wave-up {
+    max-width: 99%;
+  }
+}
+@media (max-width: 950px) {
   .alquileres-title {
     font-size: 25px;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: normal;
   }
 }
 * {
@@ -404,6 +424,12 @@
 body {
   background-color: #4c4c4c;
   max-width: 100%;
+}
+
+@media (max-width: 950px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
