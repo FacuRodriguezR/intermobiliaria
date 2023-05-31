@@ -12,6 +12,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css" />
+
+     <!-- icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <header class="topheader">
@@ -21,27 +24,23 @@
           <div class="nameNav">InterMobiliaria</div>
         </a>
         <button class="open-menu" aria-label="Abrir menú">
-          <img
-            src="./assets/icon/menu-icon.svg"
-            alt="abrir-menu"
-            height="30"
-            width="30"
-          />
+          <i class='bx bx-menu open-icon'></i>
         </button>
         <ul class="menu">
           <button class="close-menu" aria-label="Cerrar Menú">
-            <img
+            <!-- <img
               src="./assets/icon/close-icon.svg"
               alt="cerrar-menu"
               height="30"
               width="30"
-            />
+            /> -->
+            <i class='bx bx-x close-icon'></i>
           </button>
           <li><a href="#perfil">Home</a></li>
-          <li><a href="#experiencia">Alquileres</a></li>
-          <li><a href="#experiencia">Venta</a></li>
-          <li><a href="#experiencia">Compra</a></li>
-          <li><a href="#habilidades">Tasaciones</a></li>
+          <li><a href="#alquileres">Alquileres</a></li>
+          <li><a href="#venta">Venta</a></li>
+          <li><a href="#compra">Compra</a></li>
+          <li><a href="#tasaciones">Tasaciones</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
@@ -52,17 +51,31 @@
       
     </div>
     <section class="main-container container">
-      <h2>
+      <p>
         Nuestro compromiso es ofrecerte un servicio personalizado y
         transparente en cada paso del camino. No importa si estás buscando
         comprar, vender o alquilar, estamos aquí para convertir tus sueños en
         realidad . ¡No pierdas más tiempo! Contáctanos hoy mismo y permítenos
         ayudarte a encontrar el lugar al que llamarás hogar.
-      </h2>
+      </p>
+    </section>
+
+    <section class="alquileres" id="alquileres">
+      <img src="./assets/img/wave (2).svg" alt="wave" class="wave-up">
+
+      <div class="alquileres-main">
+        <h2 class="alquileres-title">Alquileres</h2>
+      </div>
+      <div class="cards">
+
+      </div>
+
+      <img src="./assets/img/wave (3).svg" alt="wave2" class="wave wave-bottom">
     </section>
 
     <div class="contacto container">
         <h2 class="title-contact">Contactate con nosotros</h2>
+
     </div>
 
 
@@ -71,15 +84,15 @@
         <section class="contact" id="contacto">
     
          
-            <h2 class="contact-title">Contacto</h2>
+            <h2 class="contact-title">InterMobiliaria</h2>
             <div class="contact-details">
               <div class="contact-details-group">
                 <p class="contact-label">Dirección</p>
-                <p class="contact-text">Mendoza - Argentina</p>
+                <p class="contact-text">Ameghino 41 - Las Heras - Mendoza</p>
               </div>
               <div class="contact-details-group">
                 <p class="contact-label">Email:</p>
-                <p class="contact-text">intemobiliaria@gmail.com</p>
+                <p class="contact-text">cinmobiliariotorres@gmail.com</p>
               </div>
     
             </div>
@@ -105,18 +118,18 @@
             <nav>
               <ul class="social-list">
                 <li class="social-item">
-                  <a href="#" class="social-link" target="_blank"> 
-                    <img src="./assets/icon/gmail-svgrepo-com.svg" alt="">
+                  <a href="mailto:cinmobiliariatorres@gmail.com" class="social-link" target="_blank"> 
+                    <i class='bx bxl-gmail social-icon' ></i>
                   </a>
                 </li>
                 <li class="social-item">
                   <a href="https://api.whatsapp.com/send?l=es&phone=+5492616101736&text=¡Hola%20Apu!%20me%20gustaría%20contactarme%20con%20ustedes" class="social-link" target="_blank"> 
-                    <img src="./assets/icon/whatsapp-color-svgrepo-com.svg" alt="">
+                    <i class='bx bxl-whatsapp social-icon' ></i>
                   </a>
                 </li>
                 <li class="social-item">
-                  <a href="https://www.instagram.com/crochettina.cm/?igshid=MzRlODBiNWFlZA%3D%3D" class="social-link" target="_blank"> 
-                    <img src="./assets/icon/instagram-1-svgrepo-com.svg" alt="coso">
+                  <a href="https://instagram.com/intermobiliariamza?igshid=OTk0YzhjMDVlZA==" class="social-link" target="_blank"> 
+                    <i class='bx bxl-instagram social-icon' ></i>
                   </a>
                 </li>
               </ul>

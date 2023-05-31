@@ -19,6 +19,8 @@
 /* logo */
 .nameNav {
   color: #ebecee;
+  font-weight: 300;
+  font-size: 28px;
 }
 
 .logo {
@@ -79,6 +81,16 @@
   display: none;
 }
 
+.close-icon {
+  color: #ebecee;
+  font-size: 30px;
+}
+
+.open-icon {
+  color: #ebecee;
+  font-size: 30px;
+}
+
 .footer {
   background-color: #5b8291;
   text-align: center;
@@ -131,12 +143,20 @@
   .close-menu:focus:not(:focus-visible) {
     outline: none;
   }
+  .nameNav {
+    color: #ebecee;
+    font-weight: 300;
+    font-size: 20px;
+  }
 }
 .main-container {
   text-align: center;
   padding: 40px;
   position: relative;
   color: #ebecee;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .main {
@@ -164,11 +184,14 @@
   color: #fff;
   position: relative;
   text-align: center;
+  font-weight: 400;
+  letter-spacing: 10px;
 }
 
 @media (max-width: 950px) {
   .title {
     font-size: 40px !important;
+    letter-spacing: normal !important;
   }
 }
 .footer {
@@ -268,13 +291,18 @@
   justify-content: center;
 }
 
-.social-list img {
+.social-list i {
   height: 25px;
 }
 
-.social-list img:hover {
+.social-list i:hover {
   filter: drop-shadow(0 0 14px #98dad8);
   transition: all 0.2s ease-in-out;
+}
+
+.social-icon {
+  color: #ebecee;
+  font-size: 30px;
 }
 
 .title-contact {
@@ -282,6 +310,7 @@
   color: #ebecee;
   margin: 40px;
   font-size: 30px;
+  font-weight: 300;
 }
 
 @media (min-width: 950px) {
@@ -294,7 +323,7 @@
   }
   .contact-title {
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: left;
   }
   .social-list {
@@ -320,6 +349,41 @@
     align-items: center;
   }
 }
+.alquileres-main {
+  background: #30444f;
+  color: #ebecee;
+  text-align: center;
+}
+
+.wave {
+  max-width: 100%;
+  position: relative;
+  top: -3px;
+}
+
+.wave-up {
+  margin: -5px;
+}
+
+.alquileres-title {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+@media (min-width: 950px) {
+  .alquileres-main {
+    background: #30444f;
+    color: #ebecee;
+    text-align: center;
+    padding: 30px;
+  }
+  .alquileres-title {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
 * {
   scroll-padding-top: 2rem;
   scroll-behavior: smooth;
@@ -339,6 +403,7 @@
 
 body {
   background-color: #4c4c4c;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

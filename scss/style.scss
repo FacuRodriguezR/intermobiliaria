@@ -3,6 +3,7 @@
 @import 'main';
 @import 'footer';
 @import 'contact';
+@import 'alquileres';
 
 *{  
     scroll-padding-top: 2rem;
@@ -23,4 +24,5 @@
 
 body {
     background-color: $navbar-shallow-color;
+    max-width: 100%;
 }

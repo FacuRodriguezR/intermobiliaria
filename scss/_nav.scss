@@ -21,6 +21,8 @@
 
 .nameNav {
     color: $text-color;
+    font-weight: 300;
+    font-size: 28px;
     
 }
 
@@ -81,11 +83,23 @@
   
   .menu a:hover {
     color:$primary-color;
+    
   }
 
 .open-menu,
 .close-menu{
     display: none;
+}
+
+// close and open icon
+
+.close-icon{
+    color: $text-color;
+    font-size: 30px;
+}
+.open-icon{
+    color: $text-color;
+    font-size: 30px;
 }
 
 .footer{
@@ -149,5 +163,12 @@
     .open-menu:focus:not(:focus-visible),
     .close-menu:focus:not(:focus-visible) {
       outline: none;
+    }
+
+    .nameNav {
+        color: $text-color;
+        font-weight: 300;
+        font-size: 20px;
+        
     }
 }

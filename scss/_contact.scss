@@ -84,21 +84,28 @@
     gap: 25px;
     justify-content: center;
   }
-  .social-list img {
+  .social-list i {
     height: 25px;
   }
-  .social-list img:hover{
+  .social-list i:hover{
     filter: drop-shadow(0 0 14px $secondary-color);
     transition: all 0.2s ease-in-out ;
   
   }
 
+  .social-icon{
+    color: $text-color;
+    font-size: 30px;
+  }
   .title-contact {
     text-align: center;
     color: $text-color;
     margin: 40px;
     font-size: 30px;
+    font-weight: 300;
   }
+
+
   
   @media (min-width: 950px){
   
@@ -114,7 +121,7 @@
     
     .contact-title{
       font-size: 35px;
-      font-weight: 500;
+      font-weight: 400;
       text-align: left;
      
   
